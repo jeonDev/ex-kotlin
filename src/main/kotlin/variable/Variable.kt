@@ -1,5 +1,5 @@
 package variable
-
+//https://cjw-awdsd.tistory.com/20
 fun main(args: Array<String>) {
 
     variable()
@@ -14,6 +14,8 @@ fun main(args: Array<String>) {
     etcWhen("we")
     etcWhile()
     etcFor()
+    etcFlow()
+    etcLabel()
 }
 // variable
 fun variable() {
@@ -101,5 +103,33 @@ fun etcFor() {
     println()
     for (a in 'a'..'e') {
         print(a)
+    }
+}
+
+fun etcFlow() {
+    for (i in 0..5) {
+        if (i == 2) {
+            break
+        }
+        println(i)
+    }
+
+    for (i in 0..5) {
+        if (i == 2) {
+            continue
+        }
+        println(i)
+    }
+}
+
+fun etcLabel() {
+    // @label : 반복문에 라벨이름@을 달고 break, continue 문에 @라벨 이름을 달면 break, continue가 라벨 이름으로 가 실행
+    awd@for (i in 0..10) {
+        for (j in 0..10) {
+            if ( i == 0 && j == 3) {
+                break@awd
+            }
+            println("$i, $j")
+        }
     }
 }
