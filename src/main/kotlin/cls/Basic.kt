@@ -25,3 +25,8 @@ class Prs(var name:String, val birth:Int) {
         println("$name $birth")
     }
 }
+
+/**
+접근제한자
+ default : public
+ */
