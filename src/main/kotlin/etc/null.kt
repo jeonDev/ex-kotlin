@@ -1,4 +1,4 @@
-package stringfunc
+package etc
 
 // 자바에서는 보통 if (변수==null) 형식으로 null 값을 처리한다.
 // 코틀린은 ? ?: !! 을 통해 null 값을 처리할 수 있다.

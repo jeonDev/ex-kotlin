@@ -1,4 +1,4 @@
-package stringfunc
+package etc
 
 fun main() {
     val test = "a.b.c.d"
